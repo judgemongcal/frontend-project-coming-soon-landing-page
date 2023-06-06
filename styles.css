@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;600;700&display=swap');
+
+
+:root{
+    --shadow-shade: rgba(76, 123, 243, 23%);
+    --social-circle: rgba(76, 123, 243, 14.65%);
+}
+*{
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+}
+
+.main-container{
+    margin-bottom: 2rem;
+}
+
+.main-container h1{
+    font-size: 1.375rem;
+    font-weight: 100;
+    color: #969696;
+    margin-bottom: 1rem;
+}
+
+#bold{
+    font-weight: 700;
+    color: #000000;
+}
+
+.main-container h2{
+    font-size: 0.75rem;
+    font-weight: 100;
+    color: #000000;
+}
+
+.image{
+    margin: 5rem auto 2rem auto;
+    text-align: center;
+}
+
+.image img{
+    width: 3.5rem;
+}
+
+.email-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+
+}
+
+.email{
+    border: 1.5px solid #C2D3FF;
+    border-radius: 1.75rem;
+    width: 17.5rem;
+    height: 2rem;
+    margin-bottom: 0.625rem;
+    box-sizing: border-box;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+}
+
+input::placeholder{
+    font-size: 0.75rem;
+    color: #B8C7ED;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.notify-btn{
+    border: none;
+    border-radius: 1.75rem;
+    width: 17.5rem;
+    height: 2rem;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.notify-btn:hover{
+    background-color: #7196F5;
+}
+
+input[type="submit"] {
+    background-color: #4C7BF3;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    box-shadow: 0px 5px 10px 2px var(--shadow-shade);
+}
+
+.dashboard-container img{
+    max-width: 90%;
+    max-height: 100%;
+    margin-bottom: 7.5rem;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin: auto auto 1.6rem auto;
+    
+}
+.fb, .twitter, .ig{
+    border: 1.5px solid var(--social-circle);
+    border-radius: 80rem;
+    width: max-content;
+    transition: fill 0.3s ease;
+}
+
+.fb:hover, .twitter:hover, .ig:hover{
+    background-color: #4C7BF3;
+}
+
+.fb svg, .twitter svg, .ig svg{
+    margin: 0.5rem;
+    transition: fill 0.3s ease;
+}
+
+.fb svg:hover , .twitter svg:hover, .ig svg:hover{
+    cursor: pointer;
+    fill: #ffffff;
+
+}
+
+.copyright{
+    text-align: center;
+    font-size: 0.625rem;
+    font-weight: 100;
+    color: #969696;
+}
+
+footer{
+    margin-top: 5rem;
+}
+
+@media (min-width: 400px) {
+
+/* Socials */
+
+.socials{
+    width: 30%;
+    
+}
+
+}
+
+
+@media (min-width: 564px) {
+
+/* Main Container */
+.image img{
+    width: 5.625rem;
+}
+
+.main-container h1{
+    font-size: 3rem;   
+}
+
+.main-container h2{
+    font-size: 1.25rem;
+}
+
+/* Email Container */
+
+.email{
+    width: 26.3rem;
+    height: 3.5rem;
+}
+
+input::placeholder{
+    font-size: 1rem;
+}
+
+.notify-btn{
+    width: 12.5rem;
+    height: 3.5rem;
+}
+
+input[type="submit"] {
+    font-size: 1rem;
+}
+
+/* Dashboard */
+    
+.dashboard-container img {
+    max-width: 50%;
+}
+
+/* Socials */
+
+.socials{
+    width: 30%;
+    
+}
+
+/* Copyright */
+.copyright{
+    font-size: 0.75rem;
+}
+
+}
+
+@media (min-width: 625px) {
+
+/* Email Container */
+
+.notify-btn{
+    margin-left: 0.5rem;
+}
+
+}
+
+@media (min-width: 1000px) {
+    /* Socials */
+
+.socials{
+    width: 15%;
+    
+}
+}
