@@ -43,7 +43,6 @@
 
 .email-container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     margin-bottom: 4rem;
 
@@ -58,6 +57,9 @@
     box-sizing: border-box;
 }
 
+.email-div{
+    display: block;
+}
 form {
     padding: 0;
     margin: 0;
@@ -228,7 +230,18 @@ input[type="submit"] {
 /* Email Container */
 
 .email-container{
+   flex-direction: row; 
+}
+
+form{
+    display: flex;
     flex-direction: row;
+}
+
+.error-msg{
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: 1rem;
 }
 
  /* Socials */
